@@ -125,6 +125,14 @@ function App() {
               {/* Stats Cards */}
               <div className="grid grid-cols-3 gap-4 mt-8">
                 <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-4 rounded-xl border border-cyan-500/20 backdrop-blur-sm">
+                  <div className="text-2xl font-bold text-cyan-400">4+</div>
+                  <div className="text-xs text-white/60">Organisasi</div>
+                </div>
+                <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-4 rounded-xl border border-cyan-500/20 backdrop-blur-sm">
+                  <div className="text-2xl font-bold text-cyan-400">3+</div>
+                  <div className="text-xs text-white/60">Prestasi</div>
+                </div>
+                <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-4 rounded-xl border border-cyan-500/20 backdrop-blur-sm">
                   <div className="text-2xl font-bold text-cyan-400">2025</div>
                   <div className="text-xs text-white/60">Active</div>
                 </div>
@@ -138,7 +146,7 @@ function App() {
                 handle="Thoriqqq_27"
                 status="Online"
                 contactText="Contact Me"
-                avatarUrl="/assets/THORIQ.png"
+                avatarUrl="./assets/THORIQ.png"
                 showUserInfo={true}
                 enableTilt={true}
                 enableMobileTilt={false}
@@ -256,7 +264,7 @@ function App() {
             <div className="group relative border border-white/10 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-sm hover:border-cyan-400/50">
               <div className="absolute inset-0 bg-gradient-to-t from-cyan-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <img
-                src="/assets/osis.jpg"
+                src="./assets/osis.jpg"
                 alt="OSIS"
                 className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -275,7 +283,7 @@ function App() {
             <div className="group relative border border-white/10 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-sm hover:border-cyan-400/50">
               <div className="absolute inset-0 bg-gradient-to-t from-cyan-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <img
-                src="/assets/pramuka.jpg"
+                src="./assets/pramuka.jpg"
                 alt="Pramuka"
                 className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -294,7 +302,7 @@ function App() {
             <div className="group relative border border-white/10 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-sm hover:border-cyan-400/50">
               <div className="absolute inset-0 bg-gradient-to-t from-cyan-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <img
-                src="/assets/rohis.jpg"
+                src="./assets/rohis.jpg"
                 alt="Rohis"
                 className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -313,7 +321,7 @@ function App() {
             <div className="group relative border border-white/10 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-sm hover:border-cyan-400/50">
               <div className="absolute inset-0 bg-gradient-to-t from-cyan-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <img
-                src="/assets/badminton.jpg"
+                src="./assets/badminton.jpg"
                 alt="Badminton"
                 className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -431,14 +439,14 @@ function App() {
           {/* GRID FOTO */}
           <div className="columns-2 sm:columns-3 md:columns-4 gap-4 space-y-4">
             {[
-              "/assets/Apis.png",
               "/assets/Anak12E.jpg",
+              "/assets/Apis.png",
               "/assets/apis2.png",
               "/assets/Kelas12e.jpg",
               "/assets/kelas12e1.jpg",
               "/assets/temen1.jpg",
-              "/assets/Osis2.jpg",
-              "/assets/badminton.jpg",
+              "/assets/TMB.jpg",
+              "/assets/Drama1.jpg",
             ].map((src, index) => (
               <div
                 key={index}
@@ -550,6 +558,19 @@ function App() {
               </div>
             </a>
           </div>
+
+          {/* Call to Action Card */}
+          <div className="mt-16 relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-400/10 via-purple-500/10 to-cyan-400/10 rounded-2xl blur-2xl"></div>
+            <div className="relative border border-cyan-400/20 rounded-2xl p-8 bg-gradient-to-br from-slate-900/90 via-slate-800/90 to-slate-900/90 backdrop-blur-sm hover:border-cyan-400/40 transition-all duration-300">
+              <p className="text-white/80 text-lg mb-4">
+                Mari berkolaborasi dan berdiskusi! 🤝
+              </p>
+              <p className="text-white/60 text-sm">
+                Saya terbuka untuk project baru, diskusi teknologi, atau sekadar bertukar pikiran.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -557,7 +578,7 @@ function App() {
       <footer className="relative py-8 border-t border-white/10 bg-slate-900/50 backdrop-blur-sm">
         <div className="w-full max-w-[1200px] px-6 mx-auto text-center">
           <p className="text-white/50 text-sm">
-            © 2025 Thoriq Al-Kautsar. Made with <span className="text-cyan-400">React</span>
+            © 2025 Thoriq Al-Kautsar. Made with <span className="text-cyan-400">❤️</span> and <span className="text-cyan-400">React</span>
           </p>
         </div>
       </footer>
