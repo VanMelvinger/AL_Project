@@ -7,7 +7,7 @@ export default function Navbar() {
   const highlightMobileRef = useRef(null);
 
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(null); // 🧩 awalnya null biar tidak aktif otomatis
+  const [activeIndex, setActiveIndex] = useState(null);
 
   const links = [
     { label: "Home Page", href: "#home" },
@@ -18,7 +18,6 @@ export default function Navbar() {
     { label: "Contact", href: "#contact" },
   ];
 
-  // fungsi pindahkan highlight (desktop / mobile terpisah)
   const moveDesktopHighlight = (el) => {
     const hl = highlightDesktopRef.current;
     const nav = navDesktopRef.current;
@@ -45,7 +44,6 @@ export default function Navbar() {
     hl.style.opacity = "1";
   };
 
-  // ✅ scroll halus
   const handleScrollTo = (e, href) => {
     e.preventDefault();
     const target = document.querySelector(href);
@@ -68,7 +66,6 @@ export default function Navbar() {
 
   const toggleMobile = () => setMobileOpen((prev) => !prev);
 
-  // ----------------- RETURN UI -----------------
   return (
     <>
       <style>{`
@@ -106,18 +103,16 @@ export default function Navbar() {
           <div className="max-w-[1200px] mx-auto px-4 md:px-8">
             <div className="h-16 flex items-center justify-between">
 
-              {/* LOGO */}
               <div className="flex items-center">
                 <a href="#home" onClick={(e) => handleScrollTo(e, "#home")}>
                   <img
-                    src="assets/Logo.png"
+                    src={`${process.env.PUBLIC_URL}/Logo.png`}
                     alt="Logo"
                     className="h-10 w-10 object-contain rounded-full hover:scale-105 transition-transform duration-300"
                   />
                 </a>
               </div>
 
-              {/* DESKTOP NAV */}
               <nav
                 ref={navDesktopRef}
                 className="hidden md:flex relative items-center gap-2 h-[50px] px-2"
@@ -147,7 +142,6 @@ export default function Navbar() {
                 ))}
               </nav>
 
-              {/* MOBILE TOGGLE */}
               <button
                 onClick={toggleMobile}
                 className="md:hidden text-white w-10 h-10 flex items-center justify-center rounded hover:bg-white/10 transition"
@@ -169,7 +163,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* OVERLAY */}
         <div
           onClick={() => setMobileOpen(false)}
           className={`fixed inset-0 z-40 bg-black/50 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
@@ -177,7 +170,6 @@ export default function Navbar() {
           }`}
         />
 
-        {/* MOBILE NAV */}
         <div className="md:hidden fixed top-16 left-0 w-full flex justify-center z-50">
           <nav
             ref={navMobileRef}
