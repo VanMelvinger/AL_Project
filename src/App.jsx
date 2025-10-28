@@ -146,7 +146,7 @@ function App() {
                 handle="Thoriqqq_27"
                 status="Online"
                 contactText="Contact Me"
-                avatarUrl="./assets/THORIQ.png"
+                avatarUrl="assets/THORIQ.png"
                 showUserInfo={true}
                 enableTilt={true}
                 enableMobileTilt={false}
@@ -264,7 +264,7 @@ function App() {
             <div className="group relative border border-white/10 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-sm hover:border-cyan-400/50">
               <div className="absolute inset-0 bg-gradient-to-t from-cyan-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <img
-                src="./assets/osis.jpg"
+                src="assets/osis.jpg"
                 alt="OSIS"
                 className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -283,7 +283,7 @@ function App() {
             <div className="group relative border border-white/10 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-sm hover:border-cyan-400/50">
               <div className="absolute inset-0 bg-gradient-to-t from-cyan-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <img
-                src="./assets/pramuka.jpg"
+                src="assets/pramuka.jpg"
                 alt="Pramuka"
                 className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -302,7 +302,7 @@ function App() {
             <div className="group relative border border-white/10 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-sm hover:border-cyan-400/50">
               <div className="absolute inset-0 bg-gradient-to-t from-cyan-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <img
-                src="./assets/rohis.jpg"
+                src="assets/rohis.jpg"
                 alt="Rohis"
                 className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -321,7 +321,7 @@ function App() {
             <div className="group relative border border-white/10 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-300 bg-gradient-to-br from-slate-900/90 to-slate-800/90 backdrop-blur-sm hover:border-cyan-400/50">
               <div className="absolute inset-0 bg-gradient-to-t from-cyan-400/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <img
-                src="./assets/badminton.jpg"
+                src="assets/badminton.jpg"
                 alt="Badminton"
                 className="w-full h-44 object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -439,14 +439,14 @@ function App() {
           {/* GRID FOTO */}
           <div className="columns-2 sm:columns-3 md:columns-4 gap-4 space-y-4">
             {[
-              "/assets/Anak12E.jpg",
-              "/assets/Apis.png",
-              "/assets/apis2.png",
-              "/assets/Kelas12e.jpg",
-              "/assets/kelas12e1.jpg",
-              "/assets/temen1.jpg",
-              "/assets/TMB.jpg",
-              "/assets/Drama1.jpg",
+              "assets/Anak12E.jpg",
+              "assets/Apis.png",
+              "assets/apis2.png",
+              "assets/Kelas12e.jpg",
+              "assets/kelas12e1.jpg",
+              "assets/temen1.jpg",
+              "assets/TMB.jpg",
+              "assets/Drama1.jpg",
             ].map((src, index) => (
               <div
                 key={index}
