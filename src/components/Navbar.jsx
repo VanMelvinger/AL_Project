@@ -106,7 +106,7 @@ export default function Navbar() {
               <div className="flex items-center">
                 <a href="#home" onClick={(e) => handleScrollTo(e, "#home")}>
                   <img
-                    src={`${process.env.PUBLIC_URL}/Logo.png`}
+                    src="/Logo.png"
                     alt="Logo"
                     className="h-10 w-10 object-contain rounded-full hover:scale-105 transition-transform duration-300"
                   />
