@@ -125,14 +125,6 @@ function App() {
               {/* Stats Cards */}
               <div className="grid grid-cols-3 gap-4 mt-8">
                 <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-4 rounded-xl border border-cyan-500/20 backdrop-blur-sm">
-                  <div className="text-2xl font-bold text-cyan-400">4+</div>
-                  <div className="text-xs text-white/60">Organisasi</div>
-                </div>
-                <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-4 rounded-xl border border-cyan-500/20 backdrop-blur-sm">
-                  <div className="text-2xl font-bold text-cyan-400">3+</div>
-                  <div className="text-xs text-white/60">Prestasi</div>
-                </div>
-                <div className="bg-gradient-to-br from-slate-800 to-slate-900 p-4 rounded-xl border border-cyan-500/20 backdrop-blur-sm">
                   <div className="text-2xl font-bold text-cyan-400">2025</div>
                   <div className="text-xs text-white/60">Active</div>
                 </div>
@@ -578,7 +570,7 @@ function App() {
       <footer className="relative py-8 border-t border-white/10 bg-slate-900/50 backdrop-blur-sm">
         <div className="w-full max-w-[1200px] px-6 mx-auto text-center">
           <p className="text-white/50 text-sm">
-            © 2025 Thoriq Al-Kautsar. Made with <span className="text-cyan-400">❤️</span> and <span className="text-cyan-400">React</span>
+            © 2025 Thoriq Al-Kautsar. Made with<span className="text-cyan-400">React</span>
           </p>
         </div>
       </footer>
